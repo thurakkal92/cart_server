@@ -93,7 +93,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', function (req, res) { res.send('hello world') })
 app.get('/cart', function (req, res) {
-  res.send(data)
+  res.json(data)
 })
 
 app.listen(PORT, () => {
